@@ -1,0 +1,22 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness & Health</title>
+  </head>
+
+  <body style="font-family: sans-serif; margin: 0; padding: 0;">
+    <Navbar />
+
+    <main style="max-width: 800px; margin: auto; padding: 2rem;">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
